@@ -7,44 +7,38 @@ export const HeaderContainer = styled.div`
     flex-wrap:wrap;
 `;
 
-export const MenuItems = styled.ul`
-    // width: 100%;
-    margin-bottom: 30%;
-    border: 5px solid red;
-`;
-
 export const HeaderToggle = styled.li`
     background-color: #143040;
-    width: 100px;
+    width: 90%;
     height: 80px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    text-align: center;
+    justify-content: right;
+    text-align: right;
     color:#E7B725;
 `;
 export const Item = styled.li`
     display: flex;
-    width: 140px;
-    justify-content: space-between;
+    width: 120px;
+    // justify-content: space-between;
     height: 30px;
     align-items: center;
     font-size: 20px;
-    margin-left: 70px;
-    margin-top: 10px;
-     
+    margin-left: 20%;
 `;
 
 export const ItemContainer = styled.div`
-    margin-left: -20%;
-    width: 106%;
-    padding: 9px;
-    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    display:flex;
     align-items: center;
-     &:hover {
+    margin-bottom: 10px;
+    &:hover {
         background-color: #231F20;
         border-left: 7px solid #E7B725; 
         color: #E7B725;
-     }
+    }
 `;
 
 export const Wrapper = styled.div`

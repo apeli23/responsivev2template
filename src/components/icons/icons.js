@@ -50,6 +50,5 @@ export const Hamburger = styled.div`
 `;
 
 export const Close = styled.div`
-    margin-left: 11rem;
     font-size: 2rem;
 `;
