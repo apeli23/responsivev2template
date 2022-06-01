@@ -1,0 +1,88 @@
+.timeline {
+  --w:600px; /* the break point*/
+  
+  list-style:none;
+  max-width:900px;
+  margin:0 auto;
+  padding:0;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(clamp(100%/3 + 0.1%,(var(--w) - 100vw)*1000,100%),1fr));
+  grid-gap:20px 45px;
+  position:relative;
+}
+.timeline:before {
+  content:"";
+  position:absolute;
+  inset:0 calc(50% - 1px) 0;
+  background:repeating-linear-gradient(#0000 0 6px,#000 0 12px);
+}
+.timeline li {
+  border-radius:15px;
+  padding:10px;
+  background:#37b1d9;
+  color:#fff;
+  position:relative;
+}
+.timeline li * {
+  margin:0;
+}
+.timeline li h4 {
+  font-size:23px;
+  margin-bottom:5px;
+}
+.timeline li:before {
+  content:"";
+  position:absolute;
+  top:25px;
+  left:100%;
+  width:10px;
+  height:15px;
+  background:inherit;
+  clip-path:polygon(0 0,100% 50%,0 100%);
+}
+.timeline li:after {
+  content:"";
+  position:absolute;
+  border-radius:50%;
+  top:27px;
+  width:11px;
+  height:11px;
+  left:calc(100% + 17px);
+  background:#000;
+}
+.timeline li:nth-child(even):before {
+  right:100%;
+  left:auto;
+  bottom:25px;
+  top:auto;
+  transform:scaleX(-1);
+}
+.timeline li:nth-child(even):after {
+  bottom:27px;
+  top:auto;
+  right:calc(100% + 17px);
+  left:auto;
+}
+
+*:before,
+*:after {
+  max-width: clamp(0px,(100vw - var(--w))*1000,100%);
+  max-height:clamp(0px,(100vw - var(--w))*1000,1000px);
+}
+
+.timeline li:nth-child(4n + 1) {
+  background:#37b1d9;
+}
+.timeline li:nth-child(4n + 2) {
+  background:#6cd937;
+}
+.timeline li:nth-child(4n + 3) {
+  background:
+    linear-gradient(#6cd937,#6cd937) 0/max(0px,100vw - var(--w)) 1px,
+    #37b1d9;
+}
+.timeline li:nth-child(4n + 4) {
+  background:
+    linear-gradient(#37b1d9,#37b1d9) 0/max(0px,100vw - var(--w)) 1px,
+    #6cd937;
+}
