@@ -34,7 +34,7 @@ export const Star = styled.i`
     color: black;
 `;
 export const Menubar = styled.div`
-    // margin-left: 2rem;
+    margin-right: 2rem;
     font-size: 3rem;
     color: white;
     display: none;

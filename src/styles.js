@@ -30,12 +30,17 @@ body  {
 }
   
 .nav-menu.active {
-    display:block;
+    display:none;
     left: 0;
     transition: 350ms;
+    @media(max-width: 768px) {
+        display: block;
+    }
 }
 
 #mobileremove {
+    @media(max-width: 1000px) {
         display: none;
+    }
 }
 `;

@@ -17,7 +17,7 @@ export default function Sidebar() {
                 <ItemContainer>
                     <Item>
                         {/* <Link to='/store'> */}
-                        <i className='fa-solid fa-gamepad' />
+                        <i className="fa-solid fa-cart-shopping"></i>
                         <p style={{ marginLeft: '30px' }}>Store</p>
                         {/* </Link> */}
                     </Item>

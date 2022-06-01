@@ -25,7 +25,7 @@ export default function Header() {
                     <div style={{ marginBottom: '30%' }}>
                         <ItemContainer>
                             <Item>
-                                <i className='fa-solid fa-gamepad' />
+                            <i className="fa-solid fa-cart-shopping"></i>
                                 <p style={{ marginLeft: '30px' }}>Store</p>
                             </Item>
                         </ItemContainer>
@@ -71,14 +71,13 @@ export default function Header() {
                             <SearchBar type='search' placeholder='Search Games' required />
                         </form>
                     </div>
-                    <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', marginRight: '3%'}}>
                         <RegularButton id="mobileremove">Upload a Game</RegularButton>
                         <BellIcon id="mobileremove" className='fa-solid fa-bell' />
                     </div>
                     <Mobilebar>
                         <Menubar className='fa-solid fa-bars' onClick={showSidebar} />
                     </Mobilebar>
-
                 </Wrapper>
             </HeaderContainer>
         </div>
