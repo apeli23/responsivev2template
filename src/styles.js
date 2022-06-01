@@ -8,6 +8,7 @@ body  {
     margin:10px;
     overflow:hidden;
     resize:horizontal;
+    font-family: "Montserrat";
 }
 
 * {
@@ -29,13 +30,12 @@ body  {
 }
   
 .nav-menu.active {
+    display:block;
     left: 0;
     transition: 350ms;
 }
 
 #mobileremove {
-    @media(max-width: 768px) {
         display: none;
-    }
 }
 `;

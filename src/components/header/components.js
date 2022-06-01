@@ -21,7 +21,6 @@ export const HeaderToggle = styled.li`
 export const Item = styled.li`
     display: flex;
     width: 120px;
-    // justify-content: space-between;
     height: 30px;
     align-items: center;
     font-size: 20px;
@@ -34,10 +33,12 @@ export const ItemContainer = styled.div`
     display:flex;
     align-items: center;
     margin-bottom: 10px;
-    &:hover {
+    &:hover{
+        color: #C59D24;
+        transition: 500ms;
         background-color: #231F20;
-        border-left: 7px solid #E7B725; 
-        color: #E7B725;
+        border-left: 5px solid #C59D24;
+        cursor: pointer;
     }
 `;
 
